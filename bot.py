@@ -7,7 +7,7 @@ from cheer_up import sad_words, cheer_up
 from happiness import happy_words, happy_for_you
 from goodbye import bye_words, good_bye
 from thought import small_talk
-import daily_recommandation
+from daily_recommandation import daily_recommendation
 import random
 from discord.ext import commands
 
@@ -23,57 +23,67 @@ intents = discord.Intents.default()
 intents.members = True
 
 
-# creation de regles
-# --rules = rules #rules
-
-
-# détecter quand le bot est prêt
+# print if the bot is online in the Console. Will display a bot activity in your server.
 @bot.event
 async def on_ready():
-    print("I'm ready")
+    print("Rain is ready")
     await bot.change_presence(status=discord.Status.idle,
                               activity=discord.Game("Call me Emperor")
                               )
 
 
-# creation de la commande --commands qui affiche les commandes du bot
-@bot.command()
+# Allow the users to check all the available commands
+@bot.command(name="commands", description="Show the bot commands.")
 async def commands(ctx):
     await ctx.send("commands list coming soon !")
 
 
-# creation de la commande Bienvenue @pseudo
-@bot.command()
+@bot.command(name="welcome", description="Will display a welcome message to all new server member.")
 async def welcome(ctx, member: discord.Member):
+    messages = await ctx.channel.history(limit=1).flatten()
     name = member.mention
+    for m in messages:
+        await m.delete()
     await ctx.send(f"Welcome {name}!")
 
 
-@bot.command()
+@bot.command(name="test", description="The bot will answer if its online.")
 async def test(ctx):
     await ctx.send("Everything looks fine... I'm ready!")
 
 
-# verification erreur
+# Error verification and warn the user about the correct way to use the command
 @welcome.error
 async def on_command_error(ctx, error):
-    # detection de l'erreur
+    # error detection
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("La commande --welcome doit être suivi de @pseudo")
+        await ctx.send("Ah, I'm sorry ! The --welcome command must be followed by a @username !")
         return
 
 
 # Erase messages
-@bot.command(name="clear")
+@bot.command(name="delete", description="Allow the user to erase the last N messages in the channel")
 async def delete(ctx, number_of_messages: int):
     messages = await ctx.channel.history(limit=number_of_messages + 1).flatten()
 
     for m in messages:
         await m.delete()
-    await ctx.send("*huff huff...*\nOkay, all done ! I cleared the chat for you !")
+    await ctx.send("...\nOkay, all done ! I cleared the chat for you ! *huff*")
 
 
-# Bot chat
+@bot.command()
+async def thought(ctx):
+    rand = random.choice(small_talk)
+    await ctx.send(rand)
+
+
+@bot.command()
+async def daily(ctx):
+    rand = random.choice(daily_recommendation)
+    await ctx.send(rand)
+
+
+# Bot reactions to usual talk in chat
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
@@ -104,7 +114,7 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-print("Lancement du bot...")
+print("Connecting. Please, wait a moment...")
 
 # connection au serveur
 bot.run(token)

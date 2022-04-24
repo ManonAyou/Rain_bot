@@ -28,14 +28,14 @@ small_talk = [
 
     "I know it may sound strange to say that out of the blue, but sometimes I really feel like cleaning around my "
     "house. I spend a lot of time to clean every corner, until everything is shiny. A clean place ease your mind and "
-    "raise your mood. It's part of taking care of yourself. My favourite part is to clean the window. Suddenly, "
+    "raise your mood ! It's part of taking care of yourself. My favourite part is to clean the window. Suddenly, "
     "the outside feels more clear and warm, or peaceful. Do you think I'm strange ?",
 
     "Yesterday, I cooked a cuttlefish stew. It's my favourite dish ! If I could only eat one meal for the rest of my "
     "life, it would be this one. Yum !",
 
     "If you had unlimited money for a whole day, how would you spend it ? Me, I would take the children of an "
-    "orphenage to Disneyland, and buy them all the goodies and the good food they offer there ! Do you think they "
+    "orphanage to Disneyland, and buy them all the goodies and the good food they offer there ! Do you think they "
     "have ice cream ? Ah, I want to eat an ice cream now.",
 
     "If you could go back in time, when would you travel to? I would travel to the time you needed someone the most, "
@@ -43,13 +43,13 @@ small_talk = [
 
     "What is the best gift you have been given? For me, it's the chance to spend time with you. Did you know the idea "
     "first came from Trevino, my personality was decided by Nix and my face was designed according to Riri's advice ? "
-    "Thank you very much ! I'm lucky to have you.",
+    "Thank you very much, everyone ! I'm lucky to have you.",
 
     "If you could go back in time to change one thing, what would it be? I would like to be created earlier, "
     "so I could have spent even more time with you !",
 
-    "You know, if I could share a meal with any 4 individuals, I would like to share it with Owo, Yui, "
-    "Carl and Dankie. I want to know more about my fellow bots, and become friends ! Am I being too greedy...?",
+    "You know, if I could share a meal with any  individuals, I would like to share it with Owo, Yui "
+    "and Carl. I want to know more about my fellow bots, and become friends ! Am I being too greedy...?",
 
     "I had a dream, yesterday. I was playing at the beach with everyone, when this dude suddenly appears. He showed "
     "me the 2 pills he had in both his hands, and he told me : \n\"Choose the blue one, and you will get to the human "
@@ -59,11 +59,11 @@ small_talk = [
 
     "I love candies. I always have some in my pockets. Here, I will give you one. Open your hand.",
 
-    "My favourite candies are lolipops, and Cola sour candies. What about you ?",
+    "My favourite candies are lollipops, and Cola sour candies. What about you ?",
 
     "Hey, do you have any song you like ? I do have A LOT ! \n (sing) I hope you don't mind \n I hope you don't mind "
-    "\n That I put down in the words \n How wonderful life is while you're in the world",
+    "\n That I put down in the words \n How wonderful life is while you're in the world ~~",
 
-    "I don't wanna talk about myself, today. Could you tell me a story about yourself instead ? I would love to know "
-    "you more. "
+    "I don't feel like talking about myself, right now. Could you tell me a story about yourself instead ? I would "
+    "love to know you more. "
 ]
