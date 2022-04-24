@@ -1,0 +1,27 @@
+bye_words = ["bye",
+             "byebye",
+             "bye bye",
+             "see you later",
+             "see you around",
+             "see ya",
+             "goodbye",
+             ]
+
+good_bye = ["See you around !",
+            "Oh, okay. I'll miss you !",
+            "See you later !",
+            "Have a nice time, then !",
+            "Bye bye !",
+            "Please, rest as much as you can and don't forget to drink a lot of water !",
+            "I hope you will come back soon. See you around !",
+            "Ah... I already miss you...",
+            "It was nice seeing you. Please, take care !",
+            "And don't for to indulge yourself !",
+            "Enjoy your time, honey !",
+            "Okay then ! Come back soon !!",
+            "Time fly so fast when I'm with you... Feel free to come back anytime. I will be around !",
+            "*gently smile and wave a hand at you*",
+            "See ya !",
+            "Alright ! Take care !",
+            "*hide some candies in your pocket before you go*\nShhh...\nOkay ! Take care ! *wink* "
+            ]
