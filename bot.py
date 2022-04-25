@@ -1,6 +1,13 @@
 import os
 import discord
-import cheer_up
+import random
+# import the userful files birthday:
+import birthday
+
+
+from discord.ext import commands
+from dotenv import load_dotenv
+# import the actions files :
 from thank_you import thanks, thank_you
 from greeting import greetings, greeting
 from cheer_up import sad_words, cheer_up
@@ -8,19 +15,20 @@ from happiness import happy_words, happy_for_you
 from goodbye import bye_words, good_bye
 from thought import small_talk
 from daily_recommandation import daily_recommendation
-import random
-from discord.ext import commands
 
-from dotenv import load_dotenv
 
 load_dotenv()
-
-token = os.getenv("TOKEN")  # token récupéré depuis le fichier .env, format TOKEN="mon_token_discord"
+token = os.getenv("TOKEN")  # fetch the Token in the .env file, where format is TOKEN="your_discord_token"
 
 bot = commands.Bot(command_prefix='--')
 client = discord.Client()
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.members = True
+
+cogs = [music]
+
+for i in range(len(cogs)):
+    cogs[i].setup(bot)
 
 
 # print if the bot is online in the Console. Will display a bot activity in your server.
@@ -72,7 +80,7 @@ async def delete(ctx, number_of_messages: int):
 
 
 @bot.command()
-async def thought(ctx):
+async def smalltalk(ctx):
     rand = random.choice(small_talk)
     await ctx.send(rand)
 

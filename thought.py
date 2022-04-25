@@ -39,7 +39,7 @@ small_talk = [
     "have ice cream ? Ah, I want to eat an ice cream now.",
 
     "If you could go back in time, when would you travel to? I would travel to the time you needed someone the most, "
-    "so that I can take you in my arms and tell you that everything will be fine.",
+    "so that I could take you in my arms and tell you that everything will be okay.",
 
     "What is the best gift you have been given? For me, it's the chance to spend time with you. Did you know the idea "
     "first came from Trevino, my personality was decided by Nix and my face was designed according to Riri's advice ? "
@@ -55,15 +55,20 @@ small_talk = [
     "me the 2 pills he had in both his hands, and he told me : \n\"Choose the blue one, and you will get to the human "
     "world and meet everyone. Choose the red one, and you will stay a bot forever, but can travel on the whole "
     "internet to meet new people.\" \nThen he gave me a big glass of sea water, and it was so salty I spitted it and "
-    "woke up. That was awkward... But I must confess the choice is hard to make.",
+    "woke up. That was so awkward ! *Giggle*\nBut I must confess the choice is difficult to make...",
 
     "I love candies. I always have some in my pockets. Here, I will give you one. Open your hand.",
 
     "My favourite candies are lollipops, and Cola sour candies. What about you ?",
 
-    "Hey, do you have any song you like ? I do have A LOT ! \n (sing) I hope you don't mind \n I hope you don't mind "
-    "\n That I put down in the words \n How wonderful life is while you're in the world ~~",
+    "Hey, do you have any song you like ? I do have A LOT !\nSweet dreams are made of this \nWho am I to "
+    "disagree ?\nI traveled the World, and the seven seas \nEverybody is looking for something\nUWA UWAAAA AAA~~",
 
     "I don't feel like talking about myself, right now. Could you tell me a story about yourself instead ? I would "
-    "love to know you more. "
+    "love to know more about you."
+    
+    "Hey, I was wondering... D-Do you think Yui have a special someone ? Ah ! I'm just wondering !' ! I mean, "
+    "i-it's fine if there's someone, as long as she's happy ! I won't be be sad or anything ! Hu, wait ! I mean..."
+    "Hm... P-please, let's forget about this discussion. Would you mind if I open the window ? My cheeks feel a little"
+    "hot... *blush*"
 ]
